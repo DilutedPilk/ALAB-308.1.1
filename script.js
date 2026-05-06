@@ -68,3 +68,48 @@ const arith = ((n1 - n2)*n3) % n4;
 console.log(`Result of "arith" : ${arith}`);
 
 // Part 2 <-------------------------------------------------------------------------->
+
+const distance = 1500;
+const budget = 175;
+const cost_per_gallon = 3;
+
+console.log(`Distance of the trip is ${distance} miles. Every gallon costs $${cost_per_gallon} and you only have a budget of $${budget}.`)
+console.log(`--------------------------------------------------------------------`)
+
+let miles_per_hour = 55;
+let miles_per_gallon = 30;
+
+console.log(`At ${miles_per_hour} miles per hour, you get ${miles_per_gallon} miles per gallon. You need ${distance/miles_per_gallon} gallons of fuel for the trip. This will cost $${(distance/miles_per_gallon)*cost_per_gallon}.`)
+
+if ((distance/miles_per_gallon)*cost_per_gallon >= budget) {
+  console.log(`${distance/miles_per_gallon} gallons is not within budget.`)
+} else {
+  console.log(`${distance/miles_per_gallon} gallons is  within budget.`)
+}
+console.log(`--------------------------------------------------------------------`)
+
+miles_per_hour = 60;
+miles_per_gallon = 28;
+
+console.log(`At ${miles_per_hour} miles per hour, you get ${miles_per_gallon} miles per gallon. You need ${distance/miles_per_gallon} gallons of fuel for the trip. This will cost $${(distance/miles_per_gallon)*cost_per_gallon}.`)
+
+if ((distance/miles_per_gallon)*cost_per_gallon >= budget) {
+  console.log(`${distance/miles_per_gallon} gallons is not within budget.`)
+} else {
+  console.log(`${distance/miles_per_gallon} gallons is  within budget.`)
+}
+console.log(`--------------------------------------------------------------------`)
+
+miles_per_hour = 75;
+miles_per_gallon = 23;
+
+console.log(`At ${miles_per_hour} miles per hour, you get ${miles_per_gallon} miles per gallon. You need ${distance/miles_per_gallon} gallons of fuel for the trip. This will cost $${(distance/miles_per_gallon)*cost_per_gallon}.`)
+
+if ((distance/miles_per_gallon)*cost_per_gallon >= budget) {
+  console.log(`${distance/miles_per_gallon} gallons is not within budget.`)
+} else {
+  console.log(`${distance/miles_per_gallon} gallons is  within budget.`)
+}
+console.log(`--------------------------------------------------------------------`)
+
+console.log(`60 miles per hour makes the most sense as it is the fastest route within budget.`)
